@@ -57,12 +57,13 @@
         <div class="col-lg-8">
           <img class="img-fluid rounded" src="sspipe.jpg" alt="">
 		  <center style="font-size:10px">Image Credits: pxhere.com</center>
+		  <br/>
         </div>
         <!-- /.col-lg-8 -->
         <div class="col-lg-4">
           <h1><i>Brij</i> Steel</h1>
           <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
-          <a class="btn btn-primary btn-lg" href="quote.html">Get Quotation</a>
+          <a class="btn btn-primary btn-lg" href=".?quote=1">Get Quotation</a>
         </div>
         <!-- /.col-md-4 -->
       </div>
@@ -140,6 +141,15 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	
+	<script>
+	  (function (w,i,d,g,e,t,s) {
+		if(window.location.search.indexOf('quote=1') > -1){
+			w[d] = w[d]||[];t= i.createElement(g);
+			t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+		}
+	  })(window, document, '_gscq','script','//widgets.getsitecontrol.com/145706/script.js');
+	</script>
 	
   </body>
 
